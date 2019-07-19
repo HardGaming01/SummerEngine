@@ -3,175 +3,34 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="SummerEngine" targetName="SumEngine" />
-      <config projectName="SummerEngine" targetName="test" />
       <config projectName="SummerEngine" targetName="spine" />
+      <config projectName="SummerEngine" targetName="test" />
+      <config projectName="SummerEngine" targetName="GLAD" />
     </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug-Visual Studio" CONFIG_NAME="Debug" TOOLCHAIN_NAME="Visual Studio" GENERATION_OPTIONS="-DCMAKE_TOOLCHAIN_FILE=C:/CXXDev/vcpkg/scripts/buildsystems/vcpkg.cmake&quot;" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27a3561b-2fe0-44e3-b183-8fcaaa8d7afe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/SummerEngine.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine/System.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/SummerEngine/System.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/Animation.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/AnimationState.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/AnimationStateData.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/Atlas.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/AtlasAttachmentLoader.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/Attachment.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/AttachmentLoader.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/AttachmentTimeline.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/AttachmentType.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/BlendMode.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/Bone.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/BoneData.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/BoundingBoxAttachment.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/ClippingAttachment.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/Color.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/ColorTimeline.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/Constraint.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/ContainerUtil.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/CurveTimeline.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/Debug.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/DeformTimeline.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/DrawOrderTimeline.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/Event.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/EventData.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/EventTimeline.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/Extension.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/HasRendererObject.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/HashMap.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/IkConstraint.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/IkConstraintData.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/IkConstraintTimeline.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/Json.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/LinkedMesh.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/MathUtil.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/MeshAttachment.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/MixBlend.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/MixDirection.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/PathAttachment.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/PathConstraint.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/PathConstraintData.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/PathConstraintMixTimeline.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/PathConstraintPositionTimeline.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/PathConstraintSpacingTimeline.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/PointAttachment.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/Pool.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/PositionMode.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/RTTI.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/RegionAttachment.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/RotateMode.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/RotateTimeline.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/ScaleTimeline.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/ShearTimeline.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/Skeleton.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/SkeletonBinary.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/SkeletonBounds.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/SkeletonClipping.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/SkeletonData.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/SkeletonJson.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/Skin.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/Slot.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/SlotData.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/SpacingMode.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/SpineObject.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/SpineString.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/TextureLoader.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/Timeline.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/TimelineType.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/TransformConstraint.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/TransformConstraintData.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/TransformConstraintTimeline.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/TransformMode.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/TranslateTimeline.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/Triangulator.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/TwoColorTimeline.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/Updatable.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/Vector.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/VertexAttachment.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/VertexEffect.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/Vertices.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/dll.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/spine/spine.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/Animation.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/AnimationState.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/AnimationStateData.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/Atlas.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/AtlasAttachmentLoader.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/Attachment.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/AttachmentLoader.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/AttachmentTimeline.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/Bone.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/BoneData.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/BoundingBoxAttachment.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/ClippingAttachment.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/ColorTimeline.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/Constraint.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/CurveTimeline.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/DeformTimeline.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/DrawOrderTimeline.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/Event.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/EventData.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/EventTimeline.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/Extension.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/IkConstraint.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/IkConstraintData.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/IkConstraintTimeline.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/Json.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/LinkedMesh.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/MathUtil.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/MeshAttachment.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/PathAttachment.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/PathConstraint.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/PathConstraintData.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/PathConstraintMixTimeline.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/PathConstraintPositionTimeline.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/PathConstraintSpacingTimeline.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/PointAttachment.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/RTTI.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/RegionAttachment.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/RotateTimeline.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/ScaleTimeline.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/ShearTimeline.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/Skeleton.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/SkeletonBinary.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/SkeletonBounds.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/SkeletonClipping.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/SkeletonData.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/SkeletonJson.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/Skin.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/Slot.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/SlotData.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/SpineObject.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/TextureLoader.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/Timeline.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/TransformConstraint.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/TransformConstraintData.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/TransformConstraintTimeline.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/TranslateTimeline.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/Triangulator.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/TwoColorTimeline.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/Updatable.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/VertexAttachment.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spine/VertexEffect.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine/Engine.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/SummerEngine/Engine.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/SummerEngine/Manager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/SummerEngine/Module.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/glad.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/engine/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/System.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/engine/System.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/SummerEngine/System.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/SummerEngine/System.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CMakeLists.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <ignored path="$PROJECT_DIR$/cmake-build-debug-visual-studio/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,88 +42,94 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/engine/System.cpp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/SummerEngine/System.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/spine/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/engine/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="vertical" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/include/SummerEngine/Engine.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="361">
+                  <caret line="19" selection-start-line="19" selection-end-line="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/engine/Engine.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="361">
+                  <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/include/SummerEngine/Module.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="285">
+                  <caret line="15" selection-start-line="15" selection-end-line="15" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/include/SummerEngine/Manager.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="323">
+                  <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lib/glad.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="266">
+                  <caret line="14" selection-start-line="14" selection-end-line="14" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/engine/CMakeLists.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="114">
+                  <caret line="6" selection-start-line="6" selection-end-line="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/include/SummerEngine/System.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="95">
+                  <caret line="5" selection-start-line="5" selection-end-line="5" />
+                  <folding>
+                    <element signature="e#0#21#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/engine/System.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="456">
+                  <caret line="24" selection-start-line="24" selection-end-line="24" />
+                  <folding>
+                    <element signature="e#0#32#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -282,20 +147,29 @@
         <option value="$PROJECT_DIR$/src/System/SummerSys.h" />
         <option value="$PROJECT_DIR$/include/SummerSys.h" />
         <option value="$PROJECT_DIR$/src/System/SummerSys.cpp" />
-        <option value="$PROJECT_DIR$/engine/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/main.cpp" />
-        <option value="$PROJECT_DIR$/include/SummerEngine/System.h" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/lib/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/lib/spine/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/lib/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/engine/main.c" />
+        <option value="$PROJECT_DIR$/include/SummerEngine/Engine.h" />
+        <option value="$PROJECT_DIR$/engine/Engine.cpp" />
+        <option value="$PROJECT_DIR$/engine/System.cpp" />
+        <option value="$PROJECT_DIR$/engine/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/include/SummerEngine/System.h" />
+        <option value="$PROJECT_DIR$/include/SummerEngine/Renderer.h" />
+        <option value="$PROJECT_DIR$/include/SummerEngine/Rendering/Renderer.h" />
+        <option value="$PROJECT_DIR$/engine/Rendering/Renderer.cpp" />
+        <option value="$PROJECT_DIR$/include/SummerEngine/Module.h" />
+        <option value="$PROJECT_DIR$/include/SummerEngine/Manager.h" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="726" />
-    <option name="y" value="-14" />
+    <option name="x" value="-7" />
     <option name="width" value="1294" />
     <option name="height" value="1407" />
   </component>
@@ -304,7 +178,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -315,17 +188,36 @@
             <path>
               <item name="SummerEngine" type="b2602c69:ProjectViewProjectNode" />
               <item name="SummerEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SummerEngine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SummerEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
               <item name="engine" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SummerEngine" type="b2602c69:ProjectViewProjectNode" />
               <item name="SummerEngine" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="CMakeFiles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SummerEngine" type="b2602c69:ProjectViewProjectNode" />
               <item name="SummerEngine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SummerEngine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SummerEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SummerEngine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SummerEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="SummerEngine" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SummerEngine" type="b2602c69:ProjectViewProjectNode" />
@@ -335,6 +227,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -346,11 +239,14 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Buster\CLionProjects\SummerEngine\include\SummerEngine\Rendering" />
       <recent name="C:\Users\Buster\CLionProjects\SummerEngine\include\SummerEngine" />
+      <recent name="C:\Users\Buster\CLionProjects\SummerEngine\engine" />
+      <recent name="C:\Users\Buster\CLionProjects\SummerEngine\lib" />
       <recent name="C:\Users\Buster\CLionProjects\SummerEngine\include" />
     </key>
   </component>
@@ -366,7 +262,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="CMake Application.spine">
+  <component name="RunManager" selected="CMake Application.SumEngine">
+    <configuration name="GLAD" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SummerEngine" TARGET_NAME="GLAD" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SumEngine" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SummerEngine" TARGET_NAME="SumEngine" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -384,6 +285,7 @@
     </configuration>
     <list>
       <item itemvalue="CMake Application.SumEngine" />
+      <item itemvalue="CMake Application.GLAD" />
       <item itemvalue="CMake Application.spine" />
       <item itemvalue="CMake Application.test" />
     </list>
@@ -399,21 +301,25 @@
       <option name="presentableId" value="Default" />
       <updated>1558945360706</updated>
       <workItem from="1558945361806" duration="3063000" />
-      <workItem from="1559052244829" duration="2387000" />
+      <workItem from="1559052244829" duration="3445000" />
+      <workItem from="1559095401015" duration="1541000" />
+      <workItem from="1559543590770" duration="4232000" />
+      <workItem from="1562648093615" duration="5845000" />
+      <workItem from="1563347837964" duration="2945000" />
+      <workItem from="1563434367482" duration="2472000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5450000" />
+    <option name="totallyTimeSpent" value="23543000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10055644" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.073529415" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" visible="true" weight="0.32969603" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -425,7 +331,8 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.32969603" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.32839313" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32605305" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -437,24 +344,55 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/include/SummerSys.h">
+    <entry file="file://$PROJECT_DIR$/include/SummerSys.h" />
+    <entry file="file://$PROJECT_DIR$/src/System/SummerSys.cpp" />
+    <entry file="file://C:/msys64/mingw32/include/boost/pool/singleton_pool.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        <state relative-caret-position="204">
+          <caret line="95" column="6" selection-start-line="95" selection-start-column="6" selection-end-line="95" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/SummerSys.cpp">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/engine/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/spine/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine/main.c" />
+    <entry file="file://$PROJECT_DIR$/lib/glad.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine/Engine.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -472,51 +410,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/engine/System.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/msys64/mingw32/include/boost/pool/singleton_pool.hpp">
+    <entry file="file://$PROJECT_DIR$/include/SummerEngine/Engine.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="95" column="6" selection-start-line="95" selection-start-column="6" selection-end-line="95" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/SummerEngine/System.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        <state relative-caret-position="361">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/spine/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/engine/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
+        <state relative-caret-position="114">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine/System.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine/Rendering/Renderer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/SummerEngine/System.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/SummerEngine/Rendering/Renderer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/SummerEngine/Module.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/SummerEngine/Manager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
         </state>
       </provider>
     </entry>
