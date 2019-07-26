@@ -1,10 +1,7 @@
-//
-// Created by Buster on 2019/7/9.
-//
-#include "System.h"
-
 #ifndef ENGINE_H
 #define ENGINE_H
+
+#include "System.h"
 
 namespace SE
 {

@@ -1,6 +1,6 @@
 
-set(SRC Engine.cpp System.cpp Rendering/Renderer.cpp ../include/SummerEngine/Manager.h)
+set(SRC Engine.cpp System.cpp Render/Mesh.cpp Render/Shader.cpp)
 
 add_library(SumEngine STATIC ${SRC})
 
-target_link_libraries(SumEngine ${SDL2_LIBRARIES} ${SDL2_image_LIBRARIES})
+target_link_libraries(SumEngine ${SDL2_LIBRARIES} GLAD)

@@ -6,7 +6,6 @@ project(SummerEngine)
 find_package(PkgConfig)
 
 find_package(SDL2 CONFIG REQUIRED)
-pkg_check_modules(SDL2_image REQUIRED SDL2_image)
 find_package(GLM CONFIG REQUIRED)
 
 if (MSVC)
@@ -19,5 +18,6 @@ include_directories(${SDL2_INCLUDE_DIR})
 # Add the subdirectories
 
 add_subdirectory(lib)
+add_subdirectory(include)
 add_subdirectory(engine)
 add_subdirectory(src)

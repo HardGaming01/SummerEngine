@@ -1,8 +1,8 @@
-#include <SDL2/SDL.h>
-#include "Module.h"
-
 #ifndef SYSTEM_H
 #define SYSTEM_H
+
+#include <SDL2/SDL.h>
+#include "Module.h"
 
 namespace SE
 {
@@ -20,8 +20,8 @@ private:
     unsigned int SCR_WIDTH = 800;
     unsigned int SCR_HEIGHT = 600;
 
-    static SDL_Window * window;
-    static SDL_GLContext glContext;
+    SDL_Window * window;
+    SDL_GLContext glContext;
 };
 }
 
