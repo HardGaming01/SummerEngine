@@ -20,8 +20,8 @@ struct Vertex
 {
     //Data
     glm::vec3 position;
+    glm::vec3 color = glm::vec3(0.0f, 0.6f, 0.0f);
     glm::vec2 texCoords;
-    glm::vec3 color = glm::vec3(0, 1, 0);
 
     //Constructor
     Vertex(float x, float y, float u, float v);

@@ -34,7 +34,7 @@ void Engine::run()
     indicies.emplace_back(3);
 
     vector<Texture> textures;
-    textures.emplace_back(Texture("Textures/wall.jpg", ".", true));
+    textures.emplace_back(Texture("wall.jpg", ".", true));
 
     Mesh mesh(vertices, indicies, textures);
 

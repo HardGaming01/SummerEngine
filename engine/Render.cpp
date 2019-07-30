@@ -3,12 +3,14 @@
 using namespace SE;
 void Render::startUp()
 {
-    shader = new Shader("Shaders/shader,vs", "Shaders/shader.fs");
+    shader = new Shader("Shaders/shader.vs", "Shaders/shader.fs");
 }
 void Render::update()
 {
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+    shader->use();
 
     for (auto i = std::begin(meshes); i != std::end(meshes); ++i)
     {
