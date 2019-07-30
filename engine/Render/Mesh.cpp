@@ -1,5 +1,6 @@
 #include <SummerEngine/Render/Mesh.h>
 
+#define STB_IMAGE_IMPLEMENTATION
 #include <stb_image.h>
 
 using namespace SE;
@@ -117,4 +118,12 @@ Texture::Texture(const char * path, const string & directory, bool gamma)
         std::cout << "Texture failed to load at path: " << path << std::endl;
         stbi_image_free(data);
     }
+}
+Vertex::Vertex(float x, float y, float u, float v):
+position(x, y, 0.0f), texCoords(u, v)
+{
+}
+Vertex::Vertex(float x, float y, float z, float u, float v):
+position(x, y, z), texCoords(u, v)
+{
 }

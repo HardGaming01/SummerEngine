@@ -18,9 +18,14 @@ namespace SE
 
 struct Vertex
 {
+    //Data
     glm::vec3 position;
     glm::vec2 texCoords;
-    glm::vec3 color;
+    glm::vec3 color = glm::vec3(0, 1, 0);
+
+    //Constructor
+    Vertex(float x, float y, float u, float v);
+    Vertex(float x, float y, float z, float u, float v);
 };
 
 struct Texture
@@ -31,7 +36,7 @@ struct Texture
     string path;
 
     //Constructor
-    Texture(const char * path, const string & directory, bool gamma);
+    Texture(const char *path, const string &directory, bool gamma);
 };
 
 class Mesh

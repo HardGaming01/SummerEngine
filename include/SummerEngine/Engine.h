@@ -2,6 +2,7 @@
 #define ENGINE_H
 
 #include "System.h"
+#include "Render.h"
 
 namespace SE
 {
@@ -11,11 +12,12 @@ public:
     Engine(unsigned height, unsigned width);
     void run();
 
+    System system;
+    Render render;
+
 private:
     bool quit = false;
     SDL_Event event;
-
-    System system;
 };
 
 }

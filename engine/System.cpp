@@ -55,7 +55,7 @@ void System::startUp()
 
     // Use v-sync
     SDL_GL_SetSwapInterval(-1);
-    SDL_SetRelativeMouseMode(SDL_TRUE);
+    //SDL_SetRelativeMouseMode(SDL_TRUE);
 
     // Disable depth test and face culling.
     glDisable(GL_CULL_FACE);
