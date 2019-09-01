@@ -20,23 +20,13 @@ struct Vertex
 {
     //Data
     glm::vec3 position;
-    glm::vec3 color = glm::vec3(0.0f, 0.6f, 0.0f);
+    glm::vec4 color = glm::vec4(1.0f, 1.0f, 1.0f, 0.8f);
     glm::vec2 texCoords;
 
     //Constructor
     Vertex(float x, float y, float u, float v);
     Vertex(float x, float y, float z, float u, float v);
-};
-
-struct Texture
-{
-    //Data
-    unsigned int id;
-    string type;
-    string path;
-
-    //Constructor
-    Texture(const char *path, const string &directory, bool gamma);
+    Vertex(float x, float y, float z, float u, float v, float r, float g, float b, float a);
 };
 
 class Mesh
@@ -45,19 +35,22 @@ public:
     //Data
     vector<Vertex> vertices;
     vector<unsigned int> indices;
-    vector<Texture> textures;
-    unsigned int VAO;
+    unsigned int textureID{};
+    unsigned int VAO{};
 
     //Functions
-    Mesh(vector<Vertex> vertices, vector<unsigned int> indices, vector<Texture> textures);
+    Mesh(vector<Vertex> vertices, vector<unsigned int> indices, unsigned int textureID);
 
-    void Draw(Shader shader);
+    void Draw();
+    void Update();
 
 private:
     //Data
-    unsigned int VBO, EBO;
+    unsigned int VBO{}, EBO{};
 
     //Functions
+    //Mesh(const Mesh & mesh);
+
     void setupMesh();
 };
 

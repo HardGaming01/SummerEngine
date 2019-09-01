@@ -1,4 +1,4 @@
-#include "SummerEngine/Render.h"
+#include <SummerEngine/Render.h>
 
 using namespace SE;
 void Render::startUp()
@@ -14,7 +14,7 @@ void Render::update()
 
     for (auto i = std::begin(meshes); i != std::end(meshes); ++i)
     {
-        i->Draw(*shader);
+        i->Draw();
     }
 
     SDL_GL_SwapWindow(system->window);
@@ -25,10 +25,15 @@ void Render::shutDown()
 }
 void Render::addMesh(Mesh &mesh)
 {
-    meshes.push_back(mesh);
+    meshes.emplace_back(mesh);
 }
 
-Render::Render(SE::System &_system)
+Render::Render(SE::System &_system):
+shader()
 {
     system = &_system;
+}
+Mesh * Render::getMesh(int index)
+{
+    return &meshes[index];
 }

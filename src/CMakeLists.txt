@@ -1,4 +1,4 @@
-set(SRC main.cpp)
+set(SRC main.cpp Scene.cpp)
 
 add_executable(test ${SRC})
 target_link_libraries(test SumEngine)

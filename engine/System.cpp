@@ -7,7 +7,8 @@
 
 using namespace SE;
 
-System::System(unsigned height, unsigned width)
+System::System(unsigned height, unsigned width):
+window(), glContext()
 {
     SCR_HEIGHT = height;
     SCR_WIDTH = width;
@@ -59,6 +60,10 @@ void System::startUp()
 
     // Disable depth test and face culling.
     glDisable(GL_CULL_FACE);
+
+    // Enable blending
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
     int w,h;
     SDL_GetWindowSize(window, &w, &h);

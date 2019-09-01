@@ -1,5 +1,5 @@
 
-set(SRC Engine.cpp System.cpp Render/Mesh.cpp Render/Shader.cpp Render.cpp)
+set(SRC Engine.cpp System.cpp Render/Mesh.cpp Render/Shader.cpp Render.cpp Animation/Spine.cpp Render/Texture.cpp Scene.cpp)
 
 add_library(SumEngine STATIC ${SRC})
 
