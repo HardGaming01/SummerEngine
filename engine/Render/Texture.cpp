@@ -8,11 +8,10 @@
 
 using namespace SE;
 
-Texture::Texture(const char * path, const string & directory)
+Texture::Texture(const char * path)
 {
     this->path = path;
     string filename = string(path);
-    filename = directory + '/' + filename;
 
     glGenTextures(1, &id);
 

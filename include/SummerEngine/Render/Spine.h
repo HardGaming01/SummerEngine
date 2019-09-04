@@ -1,8 +1,7 @@
 #ifndef SPINE_H
 #define SPINE_H
 
-#include <spine/TextureLoader.h>
-#include <spine/Skeleton.h>
+#include <spine/spine.h>
 
 #include <SummerEngine/Render/Shader.h>
 
@@ -21,7 +20,7 @@ public:
     void unload(void * texture) override;
 };
 
-void DrawSkeleton(Skeleton * skeleton, Shader shader);
+void DrawSkeleton(Skeleton * skeleton);
 
 }
 

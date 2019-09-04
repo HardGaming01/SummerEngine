@@ -19,7 +19,7 @@ SummerEngineTextureLoader::~SummerEngineTextureLoader()
 
 void SummerEngineTextureLoader::load(AtlasPage& page, const String &path)
 {
-    auto * texture = new Texture(path.buffer(), "");
+    auto * texture = new Texture(path.buffer());
 
     page.setRendererObject(texture);
 
@@ -31,7 +31,7 @@ void SummerEngineTextureLoader::unload(void *texture)
     auto * trueTexture = (Texture *) texture;
     delete trueTexture;
 }
-void DrawSkeleton(Skeleton *skeleton, Shader shader)
+void SE::DrawSkeleton(Skeleton *skeleton)
 {
     size_t n = skeleton->getSlots().size();
     for (size_t i = 0; i < n ; ++i)

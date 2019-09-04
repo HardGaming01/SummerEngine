@@ -3,8 +3,6 @@
 
 using namespace SE;
 
-const Uint8 * keystate;
-
 Texture * textureFace;
 Texture * textureWall;
 
@@ -27,8 +25,8 @@ void SE::Scene::startUp()
     indicies.emplace_back(2);
     indicies.emplace_back(3);
 
-    textureFace = new Texture("awesomeface.png", "./Textures");
-    textureWall = new Texture("wall.jpg", "./Textures");
+    textureFace = new Texture("./Textures/awesomeface.png");
+    textureWall = new Texture("./Textures/wall.jpg");
 
     glActiveTexture(GL_TEXTURE1);
     glBindTexture(GL_TEXTURE_2D, textureFace->id);
@@ -45,16 +43,8 @@ void SE::Scene::startUp()
 
 void SE::Scene::update()
 {
-    //quit input handling
-    //Get Keyboard input
-    keystate = SDL_GetKeyboardState(nullptr);
-    if (keystate[SDL_SCANCODE_ESCAPE])
-    {
-        SDL_Event quitEvent;
-        quitEvent.type = SDL_QUIT;
-        SDL_PushEvent(&quitEvent);
-    }
-    if(keystate[SDL_SCANCODE_LEFT])
+
+    if(engine->keystate[SDL_SCANCODE_LEFT])
     {
         Mesh * mesh = engine->render.getMesh(0);
         if (mesh->vertices[0].position.x <= 0.75)
@@ -68,7 +58,7 @@ void SE::Scene::update()
         //mesh->textureID = textureFace->id;
         mesh->Update();
     }
-    if(keystate[SDL_SCANCODE_RIGHT])
+    if(engine->keystate[SDL_SCANCODE_RIGHT])
     {
         Mesh * mesh = engine->render.getMesh(0);
         if (mesh->vertices[0].position.x >= 0.5)

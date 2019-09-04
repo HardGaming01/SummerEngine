@@ -18,6 +18,9 @@ public:
     System system;
     Render render;
 
+    //Variable
+    const Uint8 * keystate;
+
 private:
     //Module
     Scene scene;

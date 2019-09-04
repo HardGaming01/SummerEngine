@@ -21,7 +21,7 @@ public:
     string path;
 
     //Constructor
-    Texture(const char *path, const string &directory);
+    Texture(const char *path);
 };
 
 class TextureManager

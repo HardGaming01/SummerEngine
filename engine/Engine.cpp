@@ -20,6 +20,15 @@ void Engine::run()
     // Main loop
     while (!quit)
     {
+        keystate = SDL_GetKeyboardState(nullptr);
+        //quit input handling
+        if (keystate[SDL_SCANCODE_ESCAPE])
+        {
+            SDL_Event quitEvent;
+            quitEvent.type = SDL_QUIT;
+            SDL_PushEvent(&quitEvent);
+        }
+
         // Event handling
         while (SDL_PollEvent(&event))
         {

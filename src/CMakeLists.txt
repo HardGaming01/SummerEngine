@@ -1,9 +1,11 @@
-set(SRC main.cpp Scene.cpp)
-
-add_executable(test ${SRC})
+add_executable(test test/main.cpp test/Scene.cpp)
+add_executable(spineTest spineTest/main.cpp spineTest/Scene.cpp)
 target_link_libraries(test SumEngine)
+target_link_libraries(spineTest SumEngine)
 
-file(COPY Shaders
+file(COPY ../Assets/Shaders
         DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
-file(COPY Textures
+file(COPY ../Assets/Textures
+        DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+file(COPY ../Assets/Animation
         DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
