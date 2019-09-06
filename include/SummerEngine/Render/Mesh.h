@@ -19,11 +19,12 @@ namespace SE
 struct Vertex
 {
     //Data
-    glm::vec3 position;
+    glm::vec3 position{};
     glm::vec4 color = glm::vec4(1.0f, 1.0f, 1.0f, 0.8f);
-    glm::vec2 texCoords;
+    glm::vec2 texCoords{};
 
     //Constructor
+    Vertex();
     Vertex(float x, float y, float u, float v);
     Vertex(float x, float y, float z, float u, float v);
     Vertex(float x, float y, float z, float u, float v, float r, float g, float b, float a);

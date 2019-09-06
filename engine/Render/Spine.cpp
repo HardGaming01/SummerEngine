@@ -34,7 +34,7 @@ void SummerEngineTextureLoader::unload(void *texture)
 void SE::DrawSkeleton(Skeleton *skeleton)
 {
     size_t n = skeleton->getSlots().size();
-    for (size_t i = 0; i < n ; ++i)
+    for (int i = 0; i < n ; ++i)
     {
         // Get Slot with draw order
         Slot * slot = skeleton->getDrawOrder()[i];
@@ -75,7 +75,10 @@ void SE::DrawSkeleton(Skeleton *skeleton)
             auto * regionAttachment = (RegionAttachment*) attachment;
             texture = (Texture *) ((AtlasRegion *) regionAttachment->getRendererObject())->page->getRendererObject();
 
-            vertices.reserve(4 * sizeof(Vertex));
+            for (int j = 0; j < 4; ++j)
+            {
+                vertices.emplace_back(Vertex());
+            }
 
             // Compute world vertices positions
             regionAttachment->computeWorldVertices(slot->getBone(), (float *)&vertices[0], 0, sizeof(Vertex));

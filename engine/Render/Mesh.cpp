@@ -52,6 +52,9 @@ void Mesh::Update()
     glUnmapBuffer(GL_ARRAY_BUFFER);
 }
 
+Vertex::Vertex()
+= default;
+
 Vertex::Vertex(float x, float y, float u, float v):
 position(x, y, 0.0f), texCoords(u, v)
 {
