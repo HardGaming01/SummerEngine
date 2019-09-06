@@ -81,11 +81,13 @@ void SE::DrawSkeleton(Skeleton *skeleton)
             }
 
             // Compute world vertices positions
-            regionAttachment->computeWorldVertices(slot->getBone(), (float *)&vertices[0], 0, sizeof(Vertex));
+            regionAttachment->computeWorldVertices(slot->getBone(), (float *)&vertices[0], 0, 9);
 
             for (size_t j = 0, l = 0; j < 4 ; ++j, l += 2)
             {
                 Vertex & vertex = vertices[j];
+                vertex.position *= 0.01;
+
                 vertex.color[0] = tint.r;
                 vertex.color[1] = tint.g;
                 vertex.color[2] = tint.b;

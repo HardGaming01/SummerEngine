@@ -12,4 +12,5 @@ uniform float degree;
 void main()
 {
     FragColor = mix(texture(texture1, TexCoords), texture(texture2, TexCoords), 0.5) * ourColor;
+
 }

@@ -55,6 +55,8 @@ private:
     void setupMesh();
 };
 
+Mesh quadMesh();
+
 }
 
 #endif //SUMMERENGINE_MESH_H

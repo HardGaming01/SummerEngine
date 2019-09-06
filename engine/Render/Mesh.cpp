@@ -11,7 +11,7 @@ vertices(std::move(vertices)), indices(std::move(indices)), textureID(textureID)
 void Mesh::Draw()
 {
     // Setup texture
-    //glBindTexture(GL_TEXTURE_2D, textureID);
+    glBindTexture(GL_TEXTURE_2D, textureID);
 
     // draw mesh
     glBindVertexArray(VAO);
@@ -54,7 +54,6 @@ void Mesh::Update()
 
 Vertex::Vertex()
 = default;
-
 Vertex::Vertex(float x, float y, float u, float v):
 position(x, y, 0.0f), texCoords(u, v)
 {
@@ -66,4 +65,23 @@ position(x, y, z), texCoords(u, v)
 Vertex::Vertex(float x, float y, float z, float u, float v, float r, float g, float b, float a):
 position(x, y, z), color(r, g, b, a), texCoords(u, v)
 {
+}
+
+Mesh SE::quadMesh()
+{
+    vector<Vertex> vertices;
+    vertices.emplace_back(Vertex(0.5, 0.5, 1.0, 0.0));
+    vertices.emplace_back(Vertex(0.5, -0.5, 1.0, 1.0));
+    vertices.emplace_back(Vertex(-0.5, -0.5, 0.0, 1.0));
+    vertices.emplace_back(Vertex(-0.5, 0.5, 0.0, 0.0));
+
+    vector<unsigned > indices;
+    indices.emplace_back(0);
+    indices.emplace_back(1);
+    indices.emplace_back(3);
+    indices.emplace_back(1);
+    indices.emplace_back(2);
+    indices.emplace_back(3);
+
+    return Mesh(vertices, indices, 0);
 }
