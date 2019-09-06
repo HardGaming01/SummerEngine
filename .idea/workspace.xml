@@ -17,14 +17,6 @@
   <component name="ChangeListManager">
     <list default="true" id="27a3561b-2fe0-44e3-b183-8fcaaa8d7afe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/Render/Mesh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/engine/Render/Mesh.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/Render/Spine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/engine/Render/Spine.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/SummerEngine/Render/Mesh.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/SummerEngine/Render/Mesh.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shaders/shader.fs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shaders/shader.vs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Textures/awesomeface.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Textures/container.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Textures/wall.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/engine/Render/Mesh.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="627">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -52,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/SummerEngine/Render/Mesh.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-38">
-              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            <state relative-caret-position="190">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -62,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/engine/Render/Spine.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="690">
-              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+              <caret line="69" selection-start-line="69" selection-end-line="69" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -73,7 +65,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/spine/Slot.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
+            <state relative-caret-position="1349">
               <caret line="71" selection-start-line="71" selection-end-line="71" />
             </state>
           </provider>
@@ -82,7 +74,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/spine/Vector.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
+            <state relative-caret-position="1406">
               <caret line="74" selection-start-line="74" selection-end-line="74" />
             </state>
           </provider>
@@ -91,7 +83,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/spine/Skeleton.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
+            <state relative-caret-position="8911">
               <caret line="469" selection-start-line="469" selection-end-line="469" />
             </state>
           </provider>
@@ -138,8 +130,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-14" />
     <option name="y" value="-14" />
-    <option name="width" value="3226" />
-    <option name="height" value="1756" />
+    <option name="width" value="3227" />
+    <option name="height" value="1757" />
   </component>
   <component name="ProjectId" id="1Q4rL6aig9FMYgGZMheuvfA765O" />
   <component name="ProjectView">
@@ -320,6 +312,7 @@
       <workItem from="1567532938512" duration="1297000" />
       <workItem from="1567545983358" duration="3634000" />
       <workItem from="1567726376276" duration="2499000" />
+      <workItem from="1567730345082" duration="217000" />
     </task>
     <task id="LOCAL-00001" summary="Try to implement a spine demo">
       <created>1567558305860</created>
@@ -328,11 +321,18 @@
       <option name="project" value="LOCAL" />
       <updated>1567558305860</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Try to implement a spine demo2">
+      <created>1567730376265</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567730376281</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9654000" />
+    <option name="totallyTimeSpent" value="9871000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -346,7 +346,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1842" height="1002" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12709966" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12821949" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -412,7 +412,8 @@
     <MESSAGE value="Dynamic Mesh Setup" />
     <MESSAGE value="Implementing Spine runtime&#10;&#10;Cleaner Engine Structure.&#10;Engine Code and game code seperation" />
     <MESSAGE value="Try to implement a spine demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Try to implement a spine demo" />
+    <MESSAGE value="Try to implement a spine demo2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Try to implement a spine demo2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -596,38 +597,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/SummerEngine/Render/Mesh.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/spine/Vector.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/spine/Skeleton.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="469" selection-start-line="469" selection-end-line="469" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/spine/RegionAttachment.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="82">
           <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine/Render/Mesh.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
@@ -638,17 +611,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/engine/Render/Mesh.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/SummerEngine/Render/Mesh.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/spine/Slot.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
+        <state relative-caret-position="1349">
           <caret line="71" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/spine/Vector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1406">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/spine/Skeleton.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8911">
+          <caret line="469" selection-start-line="469" selection-end-line="469" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/engine/Render/Spine.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
