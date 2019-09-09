@@ -26,13 +26,16 @@ void SummerEngineTextureLoader::load(AtlasPage& page, const String &path)
     page.width = texture->width;
     page.height = texture->height;
 }
+
 void SummerEngineTextureLoader::unload(void *texture)
 {
     auto * trueTexture = (Texture *) texture;
     delete trueTexture;
 }
-void SE::DrawSkeleton(Skeleton *skeleton)
+
+Model * SE::SetupSkeleton(Skeleton *skeleton)
 {
+    Model * model = new Model;
     size_t n = skeleton->getSlots().size();
     for (int i = 0; i < n ; ++i)
     {
@@ -86,7 +89,7 @@ void SE::DrawSkeleton(Skeleton *skeleton)
             for (size_t j = 0, l = 0; j < 4 ; ++j, l += 2)
             {
                 Vertex & vertex = vertices[j];
-                vertex.position *= 0.01;
+                vertex.position *= 0.005;
 
                 vertex.color[0] = tint.r;
                 vertex.color[1] = tint.g;
@@ -98,6 +101,7 @@ void SE::DrawSkeleton(Skeleton *skeleton)
             }
         }
         Mesh mesh = Mesh(vertices, indices, texture->id);
-        mesh.Draw();
+        model->addMesh(mesh);
     }
+    return model;
 }

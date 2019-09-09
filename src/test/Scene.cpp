@@ -41,7 +41,7 @@ void SE::Scene::update()
         {
             degree += 0.01;
         }
-        //mesh->textureID = textureFace->id;
+        mesh->textureID = textureFace->id;
         mesh->Update();
     }
     if(engine->keystate[SDL_SCANCODE_RIGHT])
@@ -55,11 +55,10 @@ void SE::Scene::update()
         {
             degree -= 0.01;
         }
-        //mesh->textureID = textureWall->id;
+        mesh->textureID = textureWall->id;
         mesh->Update();
     }
     engine->render.shader->setFloat("degree", degree);
-    //quit input end
 }
 
 void SE::Scene::shutDown()

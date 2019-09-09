@@ -40,6 +40,7 @@ public:
     unsigned int VAO{};
 
     //Functions
+    Mesh() = default;
     Mesh(vector<Vertex> vertices, vector<unsigned int> indices, unsigned int textureID);
 
     void Draw();

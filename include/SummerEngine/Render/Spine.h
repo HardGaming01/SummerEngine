@@ -4,6 +4,7 @@
 #include <spine/spine.h>
 
 #include <SummerEngine/Render/Shader.h>
+#include <SummerEngine/Render/Model.h>
 
 using namespace spine;
 
@@ -20,7 +21,7 @@ public:
     void unload(void * texture) override;
 };
 
-void DrawSkeleton(Skeleton * skeleton);
+Model * SetupSkeleton(Skeleton *skeleton);
 
 }
 

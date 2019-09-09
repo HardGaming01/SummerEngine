@@ -16,6 +16,10 @@ void Render::update()
     {
         i->Draw();
     }
+    for (auto i = std::begin(models); i != std::end(models); ++i)
+    {
+        i->Draw();
+    }
 
     SDL_GL_SwapWindow(system->window);
 }
@@ -26,6 +30,10 @@ void Render::shutDown()
 void Render::addMesh(Mesh &mesh)
 {
     meshes.emplace_back(mesh);
+}
+void Render::addModel(Model &model)
+{
+    models.emplace_back(model);
 }
 
 Render::Render(SE::System &_system):

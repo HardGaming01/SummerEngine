@@ -1,6 +1,7 @@
 #include <SDL2/SDL.h>
 #include <SummerEngine/Render/Spine.h>
 #include <SummerEngine/Engine.h>
+#include <glm/glm.hpp>
 
 using namespace SE;
 using namespace spine;
@@ -11,6 +12,8 @@ SkeletonData * skeletonData;
 AnimationStateData * animationStateData;
 
 Skeleton * skeleton;
+
+Mesh mesh;
 
 void Scene::startUp()
 {
@@ -34,14 +37,16 @@ void Scene::startUp()
     animationStateData->setMix("jump", "walk", 0.2f);
 
     skeleton = new Skeleton(skeletonData);
+
+    Model * model = SetupSkeleton(skeleton);
+    engine->render.addModel(*model);
 }
 
 void Scene::update()
 {
-    DrawSkeleton(skeleton);
+    //mesh.Draw();
 }
 
 void Scene::shutDown()
 {
-
 }

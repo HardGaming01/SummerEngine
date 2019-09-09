@@ -1,5 +1,5 @@
-#ifndef MANAGER_H
-#define MANAGER_H
+#ifndef COMPONENT_H
+#define COMPONENT_H
 
 namespace SE
 {
@@ -21,4 +21,4 @@ private:
 };
 }
 
-#endif //MANAGER_H
+#endif //COMPONENT_H

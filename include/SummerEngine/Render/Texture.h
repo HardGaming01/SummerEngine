@@ -3,7 +3,7 @@
 
 #include <string>
 #include <vector>
-#include <SummerEngine/Manager.h>
+#include <SummerEngine/Component.h>
 
 using namespace std;
 
