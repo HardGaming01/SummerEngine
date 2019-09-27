@@ -3,4 +3,4 @@ set(SRC Engine.cpp System.cpp Render.cpp Scene.cpp Render/Mesh.cpp Render/Shader
 
 add_library(SumEngine STATIC ${SRC})
 
-target_link_libraries(SumEngine ${SDL2_LIBRARIES} GLAD spine)
+target_link_libraries(SumEngine SDL2-static SDL2main GLAD spine)
